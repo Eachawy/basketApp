@@ -1,0 +1,31 @@
+﻿
+
+<div class="row">
+  <div class="col-md-4" ng-repeat="Review in Reviews | offset: currentPage*itemsPerPage | limitTo: itemsPerPage">
+    <div class="thumbnail">
+      <a href="#/{{Review.ID}}">
+        <img ng-src="{{Review.img}}" alt="{{Review.alt}}">
+      </a>
+      <div class="caption">
+        <h3>{{Review.Cont1}}</h3>
+        <p>{{Review.Cont2}}</p>
+        <p><a href="#" class="btn btn-primary" role="button">More</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="text-center">
+<ul class="pagination">
+      <li ng-class="prevPageDisabled()">
+        <a href ng-click="prevPage()">« Prev</a>
+      </li>
+      <li ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+        <a href="javascript:void(0);">{{n+1}}</a>
+      </li>
+      <li ng-class="nextPageDisabled()">
+        <a href ng-click="nextPage()">Next »</a>
+      </li>
+</ul>
+</div>

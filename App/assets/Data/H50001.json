@@ -1,0 +1,20 @@
+{
+    "additionalFeatures": "Sensors: proximity, ambient light, barometer, gyroscope"
+    , 
+    
+    "android": {"os": "Android 3.0", "ui": "Honeycomb"}
+    , 
+
+    "images": [
+        "img/phones/motorola-xoom-with-wi-fi.0.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.1.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.2.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.3.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.4.jpg", 
+        "img/phones/motorola-xoom-with-wi-fi.5.jpg"
+    ]
+
+    , 
+
+    "sizeAndWeight": {"dimensions": ["249.1 mm (w)", "167.8 mm (h)", "12.9 mm (d)"], "weight": "708.0 grams"}
+}

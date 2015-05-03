@@ -1,0 +1,23 @@
+﻿
+eachawy
+<div>
+  {{Hotel.additionalFeatures}}
+</div>
+
+
+<div ng-repeat="H in Hotel.android">
+    {{H}}
+</div>
+
+<ul>
+  <li ng-repeat="img in Hotel.images">
+      {{img}}
+  </li>
+</ul>
+
+<dl>
+      <dt>Dimensions</dt>
+      <dd ng-repeat="dim in Hotel.sizeAndWeight.dimensions">{{dim}}</dd>
+      <dt>Weight</dt>
+      <dd>{{Hotel.sizeAndWeight.weight}}</dd>
+    </dl>
